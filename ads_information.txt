@@ -1,47 +1,20 @@
-{"Items":[
+﻿{"Items":[
 	{
-		"BANNER":"TEST_MIN_1",
+		"BANNER":"MIN_BANNER_CROCODILE_OFLINE",
 		"TYPE":"MIN",
 		"BANNER_VERSION_ADS":"1.0",
-		"TITLE":"HORROR GAMES",
-		"URL_REFERRER":"http://prime",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_Textures_1.png",
-		"TEXT_ADS":"/ТЕКСМТОВЫЙ БЛОК НОМЕР 1/ ТЕСТИРОВАНИЕ СИСТЕМЫ ЗАГРУЗКИ СОБСТВЕННОЙ РЕКЛАМНОЙ ИНФОРМАЦИИ"
+		"TITLE":"CROCODILE",
+		"URL_REFERRER":"https://play.google.com/store/apps/details?id=com.Seryi62.PaintGame",
+		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Crocodile_1.png",
+		"TEXT_ADS":""
 	},
 	{
-		"BANNER":"TEST_MIN_2",
-		"TYPE":"MIN",
-		"BANNER_VERSION_ADS":"1.0",
-		"TITLE":"DIGITAL GAME",
-		"URL_REFERRER":"http://prime",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_Textures_2.png",
-		"TEXT_ADS":"/ЦИФРОВАЯ ИГРА.ТЕКСМТОВЫЙ БЛОК НОМЕР 2/ ТЕСТИРОВАНИЕ СИСТЕМЫ ЗАГРУЗКИ СОБСТВЕННОЙ РЕКЛАМНОЙ ИНФОРМАЦИИ"
-	},
-	{
-		"BANNER":"CROCODYLE.PAINT",
+		"BANNER":"BIG_BANNER_CROCODILE_OFLINE",
 		"TYPE":"BIG",
 		"BANNER_VERSION_ADS":"1.0",
-		"TITLE":"CROCODYLE. PAINT GAMES",
-		"URL_REFERRER":"http://prime",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_Textures_3.png",
-		"TEXT_ADS":"/ТЕКСМТОВЫЙ БЛОК НОМЕР 1/ ТЕСТИРОВАНИЕ СИСТЕМЫ ЗАГРУЗКИ СОБСТВЕННОЙ РЕКЛАМНОЙ ИНФОРМАЦИИ"
-	},
-	{
-		"BANNER":"DIGITAL EXTENCION",
-		"TYPE":"BIG",
-		"BANNER_VERSION_ADS":"1.0",
-		"TITLE":"DIGITAL EXTENCION.GAME",
-		"URL_REFERRER":"http://prime",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_Textures_2.png",
-		"TEXT_ADS":"/ЦИФРОВАЯ ИГРА.ТЕКСМТОВЫЙ БЛОК НОМЕР 2/ ТЕСТИРОВАНИЕ СИСТЕМЫ ЗАГРУЗКИ СОБСТВЕННОЙ РЕКЛАМНОЙ ИНФОРМАЦИИ"
-	},
-	{
-		"BANNER":"AYES.HORROR",
-		"TYPE":"BIG",
-		"BANNER_VERSION_ADS":"1.0",
-		"TITLE":"AYES. ONE HORROR",
-		"URL_REFERRER":"http://prime",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_Textures_1.png",
-		"TEXT_ADS":"/ТЕКСМТОВЫЙ БЛОК НОМЕР 3/ ТЕСТИРОВАНИЕ СИСТЕМЫ ЗАГРУЗКИ СОБСТВЕННОЙ РЕКЛАМНОЙ ИНФОРМАЦИИ"
+		"TITLE":"CROCODYLE. SUPER GAME",
+		"URL_REFERRER":"https://play.google.com/store/apps/details?id=com.Seryi62.PaintGame",
+		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Crocodile_1.png",
+		"TEXT_ADS":"ИГРАЙ В ЛЮБИМУЮ ИГРУ КРОКОДИЛ С ДРУЗЬЯМИ ПО WI-FI. РИСУЙ ЗАГАДКИ - ПУСТЬ ТВОИ ДРУЗЬЯ ПОПРОБУТ ИХ РАЗГАДАТЬ!!!"
 	}]
 }
