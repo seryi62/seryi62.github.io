@@ -1,4 +1,4 @@
-﻿{"Items":[
+{"Items":[
 	{
 		"BANNER":"MIN_BANNER_CROCODILE_OFLINE",
 		"TYPE":"MIN",
