@@ -2,7 +2,7 @@
 	{
 		"BANNER":"MIN_BANNER_VK_OFLINE",
 		"TYPE":"MIN",
-		"BANNER_VERSION_ADS":"19.01.21",
+		"BANNER_VERSION_ADS":"22.03.21",
 		"TITLE":"GAME ART",
 		"URL_REFERRER":"https://https://vk.com/horrorextension",
 		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Digital_Extension_1.png",
@@ -11,7 +11,7 @@
 	{
 		"BANNER":"BIG_BANNER_VK_OFLINE",
 		"TYPE":"BIG",
-		"BANNER_VERSION_ADS":"19.01.21",
+		"BANNER_VERSION_ADS":"22.03.21",
 		"TITLE":"HORROR EXTENSION",
 		"URL_REFERRER":"https://https://vk.com/horrorextension",
 		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Digital_Extension_1.png",
