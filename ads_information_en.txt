@@ -1,20 +1,20 @@
 {"Items":[
 	{
-		"BANNER":"MIN_BANNER_CROCODILE_OFLINE",
+		"BANNER":"MIN_BANNER_VK_OFLINE",
 		"TYPE":"MIN",
-		"BANNER_VERSION_ADS":"19.01.21",
-		"TITLE":"CROCODILE",
-		"URL_REFERRER":"https://play.google.com/store/apps/details?id=com.Seryi62.PaintGame",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Crocodile_2.png",
+		"BANNER_VERSION_ADS":"22.03.21",
+		"TITLE":"GAME ART",
+		"URL_REFERRER":"https://https://vk.com/horrorextension",
+		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Digital_Extension_1.png",
 		"TEXT_ADS":" "
 	},
 	{
-		"BANNER":"BIG_BANNER_CROCODILE_OFLINE",
+		"BANNER":"BIG_BANNER_VK_OFLINE",
 		"TYPE":"BIG",
-		"BANNER_VERSION_ADS":"19.01.21",
-		"TITLE":"CROCODYLE. SUPER GAME",
-		"URL_REFERRER":"https://play.google.com/store/apps/details?id=com.Seryi62.PaintGame",
-		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Crocodile_2.png",
-		"TEXT_ADS":"PLAY YOUR FAVORITE CROCODILE GAME WITH YOUR FRIENDS OVER WI-FL DRAW RIDDLES - LET YOUR FRIENDS TRY TO SOLVE THEM!!!"
+		"BANNER_VERSION_ADS":"22.03.21",
+		"TITLE":"HORROR EXTENSION",
+		"URL_REFERRER":"https://https://vk.com/horrorextension",
+		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Digital_Extension_1.png",
+		"TEXT_ADS":"HORROR EXTENSION STUDIO - GAME DEVELOPMENT STUDIO FOR VARIOUS PLATFORMS, JOIN US!!!!"
 	}]
 }

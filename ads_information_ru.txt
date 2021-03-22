@@ -1,4 +1,4 @@
-﻿{"Items":[
+{"Items":[
 	{
 		"BANNER":"MIN_BANNER_VK_OFLINE",
 		"TYPE":"MIN",
@@ -15,6 +15,6 @@
 		"TITLE":"HORROR EXTENSION",
 		"URL_REFERRER":"https://https://vk.com/horrorextension",
 		"URL_ICON_ADS":"https://seryi62.github.io/Png_T_Digital_Extension_1.png",
-		"TEXT_ADS":"HORROR EXTENSION STUDIO - СТУДИЯ ПО РАЗРАБОТКЕ ИГР ПОД РАЗЛИЧНЫЕ ПЛАТФОРМЫ, ПРИСОЕДИНЯЙТЕСЬ!!!"
+		"TEXT_ADS":"HORROR EXTENSION STUDIO - СТУДИЯ ПО РАЗРАБОТКЕ ИГР ПОД РАЗЛИЧНЫЕ ПЛАТФОРМЫ, ПРИСОЕДИНЯЙТЕСЬ!!!!"
 	}]
 }
