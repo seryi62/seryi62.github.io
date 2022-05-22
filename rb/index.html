@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Rights of Birds</title>
+    <link rel="shortcut icon" href="TemplateData/favicon.ico">
+    <link rel="stylesheet" href="TemplateData/style.css">
+    <script src="https://yandex.ru/games/sdk/v2"></script>
+    <script type="text/JavaScript">
+        var yandexSdk;
+        YaGames
+            .init({
+                adv: {
+                    onAdvClose: wasShown => {
+                        console.info('adv closed!');
+                    }
+                }
+            })
+            .then(ysdk => {
+                yandexSdk = ysdk;
+                function getCallback(callbackName) {
+                    return () => {
+                        console.log(`showFullscreenAdv; callback ${callbackName} call`);
+                    }
+                }
+                yandexSdk.adv.showFullscreenAdv({
+                    callbacks: {
+                        onClose: getCallback('onClose'),
+                        onOpen: getCallback('onOpen'),
+                        onError: getCallback('onError'),
+                        onOffline: getCallback('onOffline')
+                    }
+                });
+            });
+        function ShowFullScreenAds() {
+            function getCallback(callbackName) {
+                return () => {
+                    console.log(`showFullscreenAdv; callback ${callbackName} call`);
+                }
+            }
+            yandexSdk.adv.showFullscreenAdv({
+                callbacks: {
+                     onClose: getCallback('onClose'),
+                     onOpen: getCallback('onOpen'),
+                     onError: getCallback('onError'),
+                     onOffline: getCallback('onOffline')
+                }
+            });
+        }
+    </script>
+  </head>
+  <body class="light">
+    <div id="unity-container" class="unity-desktop">
+      <canvas id="unity-canvas"></canvas>
+    </div>
+    <div id="loading-cover" style="display:none;">
+      <div id="unity-loading-bar">
+        <div id="unity-logo"><img src="logo.png"></div>
+        <div id="unity-progress-bar-empty" style="display: none;">
+          <div id="unity-progress-bar-full"></div>
+        </div>
+        <div class="spinner"></div>
+      </div>
+    </div>
+    <!--<div id="unity-fullscreen-button" style="display: none;"></div>-->
+    <script>
+      const hideFullScreenButton = "";
+      const buildUrl = "Build";
+      const loaderUrl = buildUrl + "/WEB GL.loader.js";
+      const config = {
+        dataUrl: buildUrl + "/WEB GL.data.unityweb",
+        frameworkUrl: buildUrl + "/WEB GL.framework.js.unityweb",
+        codeUrl: buildUrl + "/WEB GL.wasm.unityweb",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "Seryi62",
+        productName: "Rights of Birds",
+        productVersion: "1.2",
+      };
+
+      const container = document.querySelector("#unity-container");
+      const canvas = document.querySelector("#unity-canvas");
+      const loadingCover = document.querySelector("#loading-cover");
+      const progressBarEmpty = document.querySelector("#unity-progress-bar-empty");
+      const progressBarFull = document.querySelector("#unity-progress-bar-full");
+      //const fullscreenButton = document.querySelector("#unity-fullscreen-button");
+      const spinner = document.querySelector('.spinner');
+
+      const canFullscreen = (function() {
+        for (const key of [
+            'exitFullscreen',
+            'webkitExitFullscreen',
+            'webkitCancelFullScreen',
+            'mozCancelFullScreen',
+            'msExitFullscreen',
+          ]) {
+          if (key in document) {
+            return true;
+          }
+        }
+        return false;
+      }());
+
+      if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
+        container.className = "unity-mobile";
+        config.devicePixelRatio = 1;
+      }
+      canvas.style.background = "url('" + buildUrl + "/WEB GL.jpg') center / cover";
+      loadingCover.style.display = "";
+
+      const script = document.createElement("script");
+      script.src = loaderUrl;
+      script.onload = () => {
+        createUnityInstance(canvas, config, (progress) => {
+          spinner.style.display = "none";
+          progressBarEmpty.style.display = "";
+          progressBarFull.style.width = `${100 * progress}%`;
+        }).then((unityInstance) => {
+          unityInstance.SendMessage("StoreConnector", "SetLanguage", yandexSdk.environment.i18n.lang);
+          loadingCover.style.display = "none";
+          if (canFullscreen) {
+            if (!hideFullScreenButton) {
+              //fullscreenButton.style.display = "";
+            }
+			/*
+            fullscreenButton.onclick = () => {
+              unityInstance.SetFullscreen(1);
+            };*/
+          }
+        }).catch((message) => {
+          alert(message);
+        });
+      };
+      document.body.appendChild(script);
+    </script>
+  </body>
+</html>
